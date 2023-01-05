@@ -1,0 +1,406 @@
+body {
+    margin: 0%;
+}
+
+span {
+    color: white;
+}
+
+/* header style */
+
+#nav-size {
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+}
+
+#custom-nav-bg {
+    background-color: black;
+    font-size: 1rem;
+    border-bottom: 2px solid white;
+}
+
+/* header webpage addres style */
+#business {
+    font-family: "Georgia";
+    font-style: normal;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* navbar items style */
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: gray;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Home */
+#home {
+   
+    padding-top: 3rem;
+    background-color: black;
+}
+
+#business-text {
+    display: grid;
+    font-family: "Georgia";
+    font-style: normal;
+
+    margin-top: 177px;
+    font-weight: 700px;
+    font-size: 100px;
+    line-height: 102px;
+    color: white;
+    animation: example 4s ease 0s 1 normal forwards;
+}
+
+@keyframes example {
+    0%   {color: white;}
+    25%  {color: yellow;}
+    50%  {color: rgb(250, 5, 221);}
+    100% {color: #ffcccc;}
+  }
+
+#laptop-img {
+    padding: 12rem 0rem 2rem 0rem;
+    width: 560px;
+}
+
+.col-sm-12 {
+    display: flex;
+    justify-content: center;
+}
+
+#downarrow {
+    padding-top: 3rem;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#downarrow-logo {
+    width: 1%;
+    animation: down-arrow 3s linear 0s infinite normal forwards;
+}
+
+@keyframes down-arrow {
+
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* About Us */
+
+#aboutus {
+    background-color: white;
+    padding: 8rem 2rem;
+}
+
+#aboutus-img {
+    height: 700px;
+    width: 600px;
+    padding: 10px;
+    /* margin-left: 10%; */
+}
+
+#about-text {
+    padding: 1rem 0rem 0rem 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.about-head {
+    font-size: 60px;
+    font-style: bolder;
+}
+
+#about-font-size {
+   
+    font-family: 'Georgia';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 39px;
+
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Know More */
+
+#knowmore {
+    padding: 5rem 3rem 8rem 3rem;
+    margin-top: 0.5%;
+}
+
+.service-head {
+    font-size: 8rem;
+    font-style: bolder;
+    /* margin-left: 1.8%; */
+}
+
+.horizontally-scroll {
+    padding: 5% 0% 4% 0%;
+    border: black;
+    overflow-x: scroll;
+}
+
+.horizontally-scroll::-webkit-scrollbar {
+    height: 12px;
+}
+
+.horizontally-scroll::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 8px;
+}
+
+#card {
+    padding: 6rem;
+    margin: 2rem;
+    width: 40%;
+    height: 30%;
+    border:1px solid black;
+}
+
+#card:hover {
+    background-color: black;
+    color: white;
+    transition-delay: 0.3s;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* Contact Us */
+
+#contactus {
+    padding: 10rem 10rem;
+    background-color: black;
+}
+
+#contactushead {
+    color: white;
+    margin-top: -4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+/* contact us */
+
+@media(max-width: 768px)
+{
+  #contactus
+  {
+    display: block;
+    text-align: center;
+    font-size: medium;
+    width: 100%;
+    line-height: normal;
+    
+     
+  }
+}
+@media(max-width: 480px)
+{
+  #contactus
+  {
+    display: block;
+    text-align: center;
+    font-size: medium;
+    width:100%;
+    line-height: normal;
+   
+  }
+}
+/* contact us form  */
+@media(max-width: 768px)
+{
+  #form
+  {
+    display: block;
+    text-align: left;
+    font-size: medium;
+    width: 100%;
+    display: grid;
+     
+  }
+}
+@media(max-width: 480px)
+{
+  #form
+  {
+    display: block;
+    text-align: left;
+    font-size: medium;
+    width: 100%;
+    display: grid;
+  }
+}
+@media(max-width: 435px)
+{
+  #form
+  {
+    display: grid;
+    text-align: left;
+    font-size: 22px;
+    width: 100px;
+     
+  }
+}
+/* top in responsive */
+@media(max-width: 1868px)
+{
+  #business-text
+  {
+    display: block;
+    width: 100%;
+    display: grid;
+  } 
+  }
+@media(max-width: 768px)
+{
+    #business-text
+    
+  {
+    display: white;
+  font-size: 80px;
+    width: 100%;
+  display: inline-grid;
+  display: block;    
+  }
+}
+@media(max-width: 480px)
+{
+  #business-text
+  {
+    font-size: 60px;
+    display: white;
+    text-align: left;
+    width: 100%;
+    display: inline-grid;
+    display: block;
+    justify-self: stretch;
+  }
+}
+/* top in image */
+@media(max-width: 1868px)
+{
+  #laptop-img
+  {
+    display: block;
+    width: 100%;
+    display: grid;
+  } 
+  }
+@media(max-width: 768px)
+{
+    #laptop-img
+    
+  {
+  
+    width: 100%;
+  display: inline-grid;
+  display: block;    
+  }
+}
+@media(max-width: 480px)
+{
+  #laptop-img
+  {
+  
+    text-align: left;
+    width: 100%;
+    display: inline-grid;
+    display: block;
+     
+  }
+}
+
+@media(max-width: 1868px)
+{
+    #aboutus-img
+  {
+    object-fit: contain;
+    display: block;
+    width: 100%;
+    display: grid;
+  } 
+  }
+@media(max-width: 768px)
+{
+    #aboutus-img
+    
+  {
+    object-fit: contain;
+    width: 100%;
+  display: inline-grid;
+  display: block;    
+  }
+}
+@media(max-width: 480px)
+{
+    #aboutus-img
+  {
+  
+    object-fit: contain;
+    width: 100%;
+    display: inline-grid;
+    display: block;
+     
+  }
+}
+/* card */
+@media(max-width: 768px)
+{
+  #card
+  {
+    display: block;
+    text-align: left;
+    font-size: medium;
+    width: 100%;
+    
+     
+  }
+}
+@media(max-width: 480px)
+{
+  #card
+  {
+    display: block;
+    text-align: left;
+    font-size: small;
+    width: 100%;
+     
+  }
+}
+p{
+    font-size: 17px;
+    font-family: Georgia;
+}
+li{
+    font-size: 17px;
+    font-family: Georgia;
+}
+@media(max-width: 400px)
+{
+  #business-text
+  {
+    display: block;
+    text-align: left;
+    font-size: 43px;
+    width: 100%;
+     
+  }
+}

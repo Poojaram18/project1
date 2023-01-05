@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="module 5 test" />
+    <title>Pooja Ramaraj Frontend 1 AccioJob 30 December 2022</title>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/c/c0/WikiQueer_logo_icon.svg">
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+   
+</head>
+
+<body>
+   
+    <header>
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg bg-light" id="nav-size">
+            <div class="container-fluid" id="custom-nav-bg">
+                <!-- Left corner -->
+                <span id="business">Good Luck</span>
+
+                <div class="button">
+                    <!-- Navbar Menu -->
+                    <ul class="navbar-nav  navbar-right navbar-vertical ">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#knowmore">Our Services </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#contactus">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Home -->
+        <section id="home">
+            <div class="container-fluid row">
+                <div class=" col-lg-6 col-sm-12 ">
+                    <h1 id="business-text" class="h1">
+
+                        BUSINESS<br>   LANDING<br>   PAGE
+                    </h1>
+                </div>
+                <!-- Laptop Image -->
+                <div class="col-lg-6 ">
+                    <img id="laptop-img" src="https://i1.wp.com/www.mac-ave.com/wp-content/uploads/2016/10/MBP15RD-TB-2016-PF-Open-Silver-SCREEN.png?fit=1024%2C617&ssl=1"
+                        alt="Landing Page" />
+                </div>
+                <!-- Down Arrow -->
+                <div class="col-lg-12">
+                    <div id="downarrow">
+                        <a href="#knowmore"><img id="downarrow-logo" style="width: auto;
+                            height: 59px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEUAAAD////7+/s9PT2np6erq6v8/Py0tLS5ubn39/ddXV26urpVVVXz8/Pn5+fs7OxISEjLy8snJyfd3d1jY2PAwMBwcHBqampcXFyKiorh4eEzMzOenp5PT08ODg7V1dUXFxceHh6VlZUrKyuWlpZ1dXWCgoJCQkI5OTl9fX3Pz8+CjnudAAAFMklEQVR4nO3d6VrqQAwG4BYEBWURUMGFA6i43P8FnpaCbF2SNJnJ8OT7P2XeJ5m2QjtGkWBGLVgeJSchmmYMS8v3RMlpNmDCK98TJceEJtQfE5pQf0xoQv0xoQn1x4Qm1B8TmlB/TGhC/TGhCfXHhCbUHxOaUH9MaEL9MaEJ9ceEJtQfE5pQf0xoQv0xoQn1x4Qm1B8TmlB/TGhC/TGhCfXHhCbUHxOaUH9MaEL9MaEJ9ceEJtQfE5pQf0xoQv0xoQn1x4Qm1B8TmlB/TGhC/TGhCZ1mMiIMEhU+UQYVZ9oYL/CjJIXr+JowqjDdZKrjJXqYoHCWDLvBDytKdzMPPFFOONuMYyNOtxMdz5EDxYSz7UCmRu3+zRNbRSnh7G8kSxUn7f1Unt9RQ4WEq4Oht7iheZm2D+fSR1VRRrg6Glu7Ubsnk3zGXBdFhKuTwTWJp0AcUUI4Oxtday12c6bTh69FAeFHzvAaa/F4DeKJ/MLX3PHkRj1v0S3xBXgAdmE+kNyo3dwKYojcwiIgsVHvSqY3gBGZhcVAUhXLgNAq8grLgATiXad8Uv1v18JyIJpYXsE0vaZbYavyKKi1WA1MiNVVZBRWA1FVrGrRLIPKKvIJr0DHARNhQACRTQgDgomQFs3SG7oRQlo0C2gtwoFx3CknMgmv4ROCEKEtmqW8ijxCeAVBRBywgsgixFQQQJwiWjRLWaNyCLHACuIEDUyq+CYpxAPj+KFE+Eg4XtwpJNYX3lIm9FsijJ4oR2zcSQkfKNO5LwMmREKfxo2CKtYVkipYAaQ2an4VawpvKFOpBBIbtTPlF0q0aBbKCTWOu9zCe8osQMCkUQu/oClJI4dYRyhXwQ2RcvQcYg2hLPD41xhw2hM+oWSLZiFdNOLTn9bJQnkgsVHbJ0Sq0AWQeNE4IRKFboDF3+mX54hIE/5SPrfsbrswtOviIZEkdAeknlE/6wldApM/+CnEeE/EC+f/KJ9Y5wdEUqP+EdFCGpBcwTS0tbgjooXugdQz6idJ6KGCaTBfn+6zJgiXY8onMTxQQ2vUNVo4f6Z8Tu0K1iNihAtSBVmA1IvGD0roFUglzhDCkb8WzTJBftefZfYOFvoG4n/OyNICCh9ILcr6FHQUDUmnG8kwA6lVlAvDdfCM2PONOgx7BdO8KWpUEaCmtcj4HsJxtDSqUAX1EAWBSaOS7m4CAianG+8XDbE1uIvvRhWuYBq/VXQATP4m8khsuQAmp5vBhQP9ER2+Tfvl5e7GWQXTND2cUZ0CfTSq8xe+h46r6LiCaaBfMwULTIgOG9XTngTu1qK3TReGju5uvLRolm8npxuv22Z89eWBrz6BLk43noFR9CLcqN6BUfQu2qgKgLKNqgIoeRuuBBhFI6EqfviG7fMishbVVDCNxFpUBUzubtiJyoDJWmRu1Jlv0Hl4r4sr35y8cJ5uVAKjaMlGVNiiWbjWologV6MqutCfh+N0o3QN7rIgPd10mLVvQlWWNYmK1+AuI9IjXAEB6zWq+hbdhkwMBUh8WjSQFs1CW4vBVHATAvGz+qiaMkcTf3xPGZsF7vWQdnBALDFAYIRai4GtwV3AVQyxRbPMYW/0th99T7RGQFUMGQgihg2sbtRG4MCEWPHqcvDAqOLt7LO9NIJM8T4lncsAFhMblwIs3OnicoD5VSzcBC3MnG9M1svdPCvgnFYxb1+pwHNCvKwWzXK4wVzvEoGH+1iW7JcZdnZVLNiE8BKSbZgL2Ak83KTbVg++fM9CNFeAjc4Dzxr67z+48h/BsmPjNr+zjwAAAABJRU5ErkJggg==" alt="Know More" /></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------------------------ -->
+
+        <!-- About Us -->
+        <section id="aboutus">
+            <div class="container-fluid row">
+                <!-- About Image -->
+                <div class=" col-lg-6">
+                    <img id="aboutus-img" src="https://images.pexels.com/photos/3048527/pexels-photo-3048527.png?cs=srgb&dl=person-walking-on-stairs-in-greyscale-photograph-3048527.jpg&fm=jpg" alt="About Image" />
+                </div>
+                <!-- About Text -->
+                <div class=" col-lg-6" id="about-text">
+                    <h1 class= "about-head">
+                        <b>ABOUT US</b>
+                    </h1>
+                    <p class="lead" id="about-font-size">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------------------------ -->
+
+        <!-- Know More button -->
+        <section id="knowmore">
+            <div class="container-fluid">
+                <!-- Know More -->
+                <h1 class="h1 service-head"><b>OUR SERVICES</b></h1>
+                <div class="horizontally-scroll">
+                    <!-- Services button -->
+                    <div class="d-flex flex-row flex-nowrap row">
+                        <div class=" col-lg-6" id="card">
+                            <h3>Service 1</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </p>
+                        </div>
+                        <div class="col-lg-6" id="card">
+                            <h3>Service 2</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </p>
+                        </div>
+                        <div class="col-lg-6" id="card">
+                            <h3>Service 3</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------------------------------------------------------------ -->
+
+        <!-- Contact Us -->
+        <section id="contactus">
+            <div id="contactushead">
+                <!-- Contact Head -->
+                <h1>
+                    CONTACT US
+                </h1>
+            </div>
+            <!-- Contact Form -->
+            <form id="form" name="myform" onsubmit="return validateemail();" onclick="submit;">  
+                <input type="text" name="name"  placeholder="Full Name*"                  
+                                style="border-radius: 0px;  width:100%;color:#ffe6e6; background-color:black; padding: 1rem; margin-bottom: 1rem;"required><br/>  
+                            <input type="text" name="name"  placeholder="Last Name*"             
+                                   style="border-radius: 0px;width:100%; color:#ffe6e6; background-color:black; padding: 1rem; margin-bottom: 1rem;"
+                                    required><br/>  
+                            <input type="text" name="email"placeholder="email*"              
+                                  style="border-radius: 0px; width:100%;color:#ffe6e6; background-color:black; padding: 1rem; margin-bottom: 1rem;"
+                                   required><br/>  
+                             <input type="text" name="msg"placeholder="Reason For Contacting" 
+                                  style="border-radius: 0px; width:100%;color:#ffe6e6; background-color:black; padding: 1rem; margin-bottom: 1rem;"/></br>
+               <input type="submit" value="submit">  
+               </form>  
+        </section>
+    </main>
+
+    <!-- ---------------------------js code for form validation--------------------------------------------------- -->
+    <script>  
+        function validateemail()  
+        {  
+        var x=document.myform.email.value;  
+        var atposition=x.indexOf("@");  
+        var dotposition=x.lastIndexOf(".");  
+        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+          alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+          return false;  
+          }  
+        var name=document.myform.name.value;  
+        if (name==null || name==""){  
+          alert("form submitted!!!");  
+          return false;  
+        }
+        }  
+  </script>  
+</body>
+
+</html>
